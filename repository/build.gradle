@@ -1,0 +1,9 @@
+/**
+ * Spring
+ */
+dependencies {
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    provided 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.postgresql:postgresql:42.5.1'
+}
