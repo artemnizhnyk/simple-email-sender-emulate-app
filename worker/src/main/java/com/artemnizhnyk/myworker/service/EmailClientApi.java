@@ -1,15 +1,17 @@
-package com.artemnizhnyk.worker.service;
+package com.artemnizhnyk.myworker.service;
 
-import com.artemnizhnyk.store.entity.SendEmailTaskEntity;
 import lombok.RequiredArgsConstructor;
-import lombok.SneakyThrows;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.stereotype.Component;
+
+import java.util.Random;
 
 @Log4j2
 @RequiredArgsConstructor
 @Component
 public class EmailClientApi {
+
+    private final Random random = new Random();
 
     /**
      * @return true if email delivered to destinationEmailAddress
@@ -21,6 +23,7 @@ public class EmailClientApi {
         } catch (InterruptedException e) {
             return false;
         }
-        return true;
+
+        return random.nextBoolean();
     }
 }

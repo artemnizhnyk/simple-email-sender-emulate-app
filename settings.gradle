@@ -1,1 +1,7 @@
-rootProject.name = 'SMTP-api'
+rootProject.name = 'SMTP'
+
+include 'client-api'
+include 'worker'
+include 'repository'
+
+

@@ -1,4 +1,4 @@
-package store.entity;
+package com.artemnizhnyk.store.entity;
 
 import lombok.*;
 
@@ -22,6 +22,7 @@ public class SendEmailTaskEntity extends BaseEntity {
     @Builder.Default
     @Column(updatable = false, nullable = false)
     private Instant createdAt = Instant.now();
+    private Instant latestTryAt;
     private Instant processedAt;
     public boolean equals(final Object o) {
         if (o == this) return true;

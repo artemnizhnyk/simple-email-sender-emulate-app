@@ -1,4 +1,4 @@
-package store;
+package com.artemnizhnyk.store;
 
 import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;

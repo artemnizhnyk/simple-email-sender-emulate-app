@@ -1,4 +1,4 @@
-package com.artemnizhnyk.api.dto;
+package com.artemnizhnyk.service.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.*;

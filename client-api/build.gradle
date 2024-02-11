@@ -1,19 +1,22 @@
-plugins {
-    id 'java'
-}
-
-group = 'org.artemnizhnyk'
-version = '0.0.1-SNAPSHOT'
-
-repositories {
-    mavenCentral()
-}
-
+/**
+ * Submodules import sample
+ */
 dependencies {
-    testImplementation platform('org.junit:junit-bom:5.9.1')
-    testImplementation 'org.junit.jupiter:junit-jupiter'
+    implementation project(':repository')
+    implementation project(':worker')
 }
 
-test {
-    useJUnitPlatform()
+/**
+ * Spring
+ */
+dependencies {
+    annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+    provided 'org.springframework.boot:spring-boot-starter-web'
+    provided 'org.springframework.boot:spring-boot-starter-actuator'
+    provided 'org.springframework.boot:spring-boot-starter-data-jpa'
 }
+
+/**
+ * Other
+ */

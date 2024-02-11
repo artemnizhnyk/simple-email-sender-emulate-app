@@ -6,5 +6,5 @@ import org.springframework.context.annotation.Import;
 
 @Import({EnableSMPTStore.class})
 @Configuration
-public class ImportConfig {
+public class ClientApiImportConfig {
 }

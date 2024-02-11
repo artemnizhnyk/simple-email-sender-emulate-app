@@ -8,5 +8,5 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @Import({EnableSMPTStore.class})
 @Configuration
 @EnableScheduling
-public class ImportConfig {
+public class WorkerImportConfig {
 }
